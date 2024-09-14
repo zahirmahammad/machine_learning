@@ -9,6 +9,7 @@
 
 - $y = \sigma(w^Tx+b)$
 
+- Sigmoid Function $ \sigma (z) = \frac{1}{1+e^{-z}}$
 
 Loss Function
 
@@ -45,3 +46,14 @@ No matter where you start in the cost function you subtract and eventually end u
 ![alt text](image-1.png)
 
 If there is `b` the graph would be 3D
+
+
+
+### Computation Graph
+
+For a given equation, you can draw a computational graph and the `Forward pass` (left to right) would be the value of the final variable or node, the `backward pass` (right to left) would be the derivative of the output variable w.r.t the input variable
+
+### Computation Graph of the Cost function
+![alt text](image.png)
+
+Once you have the derivatives you can have the updates for the weights
